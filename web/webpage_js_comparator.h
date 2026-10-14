@@ -1,6 +1,6 @@
 // webpage_js_comparator.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_JS_COMPARATOR_H
-#define SMARTGLASS_WEBPAGE_JS_COMPARATOR_H
+#ifndef ESPOGIC_WEBPAGE_JS_COMPARATOR_H
+#define ESPOGIC_WEBPAGE_JS_COMPARATOR_H
 
 static const char PAGE_JS_COMPARATOR[] PROGMEM = R"HTML(// ===== 比较器 =====
     let COMPARATOR = { gates: [] };

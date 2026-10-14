@@ -1,6 +1,6 @@
 // webpage_html.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_HTML_H
-#define SMARTGLASS_WEBPAGE_HTML_H
+#ifndef ESPOGIC_WEBPAGE_HTML_H
+#define ESPOGIC_WEBPAGE_HTML_H
 
 static const char PAGE_HTML_HEAD_A[] PROGMEM = R"HTML(
 <!DOCTYPE html>

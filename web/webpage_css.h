@@ -1,6 +1,6 @@
 // webpage_css.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_CSS_H
-#define SMARTGLASS_WEBPAGE_CSS_H
+#ifndef ESPOGIC_WEBPAGE_CSS_H
+#define ESPOGIC_WEBPAGE_CSS_H
 
 static const char PAGE_CSS[] PROGMEM = R"HTML(
         /* ===== Material You 取色：由种子色 #4fd1c5 生成的中性化色调体系 ===== */

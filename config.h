@@ -1,5 +1,5 @@
-#ifndef SMARTGLASS_S3_CONFIG_H
-#define SMARTGLASS_S3_CONFIG_H
+#ifndef ESPOGIC_S3_CONFIG_H
+#define ESPOGIC_S3_CONFIG_H
 
 #include <Arduino.h>
 #include <ArduinoJson.h>

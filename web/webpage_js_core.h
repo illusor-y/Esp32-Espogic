@@ -1,6 +1,6 @@
 // webpage_js_core.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_JS_CORE_H
-#define SMARTGLASS_WEBPAGE_JS_CORE_H
+#ifndef ESPOGIC_WEBPAGE_JS_CORE_H
+#define ESPOGIC_WEBPAGE_JS_CORE_H
 
 static const char PAGE_JS_CORE[] PROGMEM = R"HTML(
     'use strict';

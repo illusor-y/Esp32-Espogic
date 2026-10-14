@@ -1,6 +1,6 @@
 // webpage_js_io.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_JS_IO_H
-#define SMARTGLASS_WEBPAGE_JS_IO_H
+#ifndef ESPOGIC_WEBPAGE_JS_IO_H
+#define ESPOGIC_WEBPAGE_JS_IO_H
 
 static const char PAGE_JS_IO[] PROGMEM = R"HTML(// ===== 序列器 =====
     let IO = { groups: [] };

@@ -4,8 +4,8 @@
 // 所有模块（PWM / 序列器 / 比较器 / 计数器 / 手动覆盖 / 锁存 / 配置导入）
 // 统一经 isIoFlashPin() 引用此表；换芯片或修正禁用范围，只改下面这张表即可。
 // 数据源：各芯片数据手册。表中未列出的型号不限制（返回 false）。
-#ifndef SMARTGLASS_PIN_BUS_MAP_H
-#define SMARTGLASS_PIN_BUS_MAP_H
+#ifndef ESPOGIC_PIN_BUS_MAP_H
+#define ESPOGIC_PIN_BUS_MAP_H
 
 #include <Arduino.h>
 

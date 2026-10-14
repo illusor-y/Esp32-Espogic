@@ -1,6 +1,6 @@
 // webpage_js_central.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_JS_CENTRAL_H
-#define SMARTGLASS_WEBPAGE_JS_CENTRAL_H
+#ifndef ESPOGIC_WEBPAGE_JS_CENTRAL_H
+#define ESPOGIC_WEBPAGE_JS_CENTRAL_H
 
 static const char PAGE_JS_CENTRAL[] PROGMEM = R"HTML(// ===== 中心面板（只读监控 + 触发归因） =====
     let centralPolling = false;

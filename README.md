@@ -93,6 +93,7 @@ espogic/
 ├─ web_server.ino         # HTTP 路由、独立 HTTP 任务、各接口处理函数
 ├─ webpage.h              # 网页静态资源总入口
 ├─ web/                   # 网页 CSS / HTML / JS 分片
+├─ images/                # README 界面预览截图
 └─ bag/                   # 附属示例（Cloudflare Worker 转发例程）
 ```
 
@@ -130,6 +131,26 @@ espogic/
 - **序列器 / 比较器 / 计数器**：三个主功能分区。
 - **天气**：网络定位、手动定位、接口转发、气象 / 阳光交互配置。
 - **全局入口**：时钟面板、中心面板、调度面板、配置备份与恢复。
+
+## 界面预览
+
+采用深色 Material You 风格，顶部是实时时钟与网络状态栏（WiFi 状态 · IP · mDNS 地址），下方依次为全局配置、时间设置与四个功能分区。
+
+| 主界面（序列器） | PWM 信号 |
+| --- | --- |
+| ![主界面（序列器）](images/01-main-sequencer.png) | ![PWM 信号](images/02-pwm.png) |
+
+| 比较器 | 计数器 |
+| --- | --- |
+| ![比较器](images/03-comparator.png) | ![计数器](images/04-counter.png) |
+
+| 调度面板 | 中心面板 |
+| --- | --- |
+| ![调度面板](images/05-dispatch-panel.png) | ![中心面板](images/06-central-panel.png) |
+
+| 天气面板 | 说明 |
+| --- | --- |
+| ![天气面板](images/07-weather.png) | 网络 / 手动定位切换、手动更新、接口转发、当日气象、日出日落与晨昏光、阳光交互参数 |
 
 ---
 
@@ -264,6 +285,25 @@ GET  /nvsstats         NVS 容量统计
 POST /factoryreset     恢复出厂（含 WiFi）
 POST /resetconfig      重置配置（保留 WiFi）
 ```
+
+---
+
+## 数据来源与致谢
+
+定位与天气均依赖第三方公共服务，本项目只做调用与展示。部署到自己的设备前，请自行确认各服务的使用条款与免费配额。
+
+| 用途 | 服务 | 接口 |
+| --- | --- | --- |
+| 国内 IP 定位（省 / 市） | iPIP.net | `http://myip.ipip.net/json` |
+| 国外 IP 定位（经纬度 + 时区） | ipwho.is | `https://ipwho.is/` |
+| 地理编码（城市名 → 经纬度） | Open-Meteo Geocoding API | `https://geocoding-api.open-meteo.com/v1/search` |
+| 天气预报与日出日落 | Open-Meteo Weather API | `https://api.open-meteo.com/v1/forecast` |
+| NTP 对时 | 阿里云 / 腾讯 / NTP Pool | `ntp.aliyun.com`、`time1.aliyun.com`、`time.qq.com`、`cn.pool.ntp.org` |
+
+- **Open-Meteo**：免费接口按其上游授权（CC BY 4.0）使用，署名要求在此保留。天气现象采用 WMO 天气码，映射表在本地实现。
+- **iPIP.net / ipwho.is**：免费 IP 地理定位接口。本项目按其返回的位置字段做国内 / 国外分流，不涉及商业依赖。
+- **太阳位置**：晨光 / 昏光由本地 NOAA 算法计算，纯本地、不联网。
+- **接口转发**：可自建 Cloudflare Worker 作为天气抓取的第三级兜底，示例见 [`bag/CF转发例程.js`](bag/CF转发例程.js)。
 
 ---
 

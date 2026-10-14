@@ -1,6 +1,6 @@
 // webpage_js_counter.h - 从 webpage.h 拆分而来
-#ifndef SMARTGLASS_WEBPAGE_JS_COUNTER_H
-#define SMARTGLASS_WEBPAGE_JS_COUNTER_H
+#ifndef ESPOGIC_WEBPAGE_JS_COUNTER_H
+#define ESPOGIC_WEBPAGE_JS_COUNTER_H
 
 static const char PAGE_JS_COUNTER[] PROGMEM = R"HTML(// ===== 计数器 =====
     let COUNTER = { tasks: [] };

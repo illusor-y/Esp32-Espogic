@@ -1,6 +1,6 @@
 // webpage_js_weather.h - 天气模块（后端抓取 + 前端只读缓存 + 手动省市区）
-#ifndef SMARTGLASS_WEBPAGE_JS_WEATHER_H
-#define SMARTGLASS_WEBPAGE_JS_WEATHER_H
+#ifndef ESPOGIC_WEBPAGE_JS_WEATHER_H
+#define ESPOGIC_WEBPAGE_JS_WEATHER_H
 
 static const char PAGE_JS_WEATHER[] PROGMEM = R"HTML(// ===== 天气 =====
     let WEATHER = {
