@@ -13,10 +13,10 @@
 // 本工程为 ESP32-S3（N16R8：16MB Flash + 8MB PSRAM）全新适配。
 //
 // Arduino IDE 板卡配置（工具 -> 开发板 -> ESP32S3 Dev Module）：
-//   Flash Size          : 16MB
-//   PSRAM               : OPI PSRAM  (8MB)
-//   USB CDC On Boot     : Enabled    （串口日志走原生 USB CDC，波特率可任意）
-//   Partition Scheme    : 16M Flash (3MB APP / 9.9MB FATFS) 或 Huge APP
+//   Flash Size          : 16MB (128Mb)   必须与下面的 Partition Scheme 匹配，否则引导程序会反复重启
+//   PSRAM               : OPI PSRAM
+//   USB CDC On Boot     : Disabled       （串口日志走 UART0，即板载 CH343 桥接的那个 COM 口）
+//   Partition Scheme    : 16M Flash (3MB APP / 9.9MB FATFS)
 //   USB Mode            : Hardware CDC and JTAG
 //
 // 说明：S3 拥有更大 SRAM/PSRAM、更新的 WiFi 驱动与可调的中断看门狗，

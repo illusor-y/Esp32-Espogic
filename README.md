@@ -60,13 +60,27 @@
 
 | 选项 | 值 |
 | --- | --- |
-| Flash Size | 16 MB |
-| PSRAM | OPI PSRAM (8 MB) |
-| USB CDC On Boot | Enabled |
-| Partition Scheme | 16M Flash (3 MB APP / 9.9 MB FATFS) 或 Huge APP |
+| USB CDC On Boot | Disabled |
+| CPU Frequency | 80MHz (WiFi) |
+| Core Debug Level | None |
+| USB DFU On Boot | Disabled |
+| Erase All Flash Before Sketch Upload | Disabled |
+| Events Run On | Core 1 |
+| Flash Mode | QIO 80MHz |
+| Flash Size | 16MB (128Mb) |
+| JTAG Adapter | Disabled |
+| Arduino Runs On | Core 1 |
+| USB Firmware MSC On Boot | Disabled |
+| Partition Scheme | 16M Flash (3MB APP/9.9MB FATFS) |
+| PSRAM | OPI PSRAM |
+| Upload Mode | UART0 / Hardware CDC |
+| Upload Speed | 921600 |
 | USB Mode | Hardware CDC and JTAG |
+| Zigbee Mode | Disabled |
 
 > 工程未附带自定义分区表，直接使用内核预置的上述方案。
+>
+> **注意**：`Flash Size` 必须与 `Partition Scheme` 匹配。若 Flash Size 停留在默认的 4MB 而分区方案选了 16MB 的，引导程序会因分区表超出芯片容量而反复重启，串口只反复输出 `partition N invalid ... exceeds flash chip size`。把 Flash Size 设为 `16MB (128Mb)` 即可解决。
 
 **开发环境**：Arduino IDE 2.3.10 + ESP32 Arduino 内核 3.3.11。
 
