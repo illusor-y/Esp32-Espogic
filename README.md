@@ -136,21 +136,19 @@ espogic/
 
 采用深色 Material You 风格，顶部是实时时钟与网络状态栏（WiFi 状态 · IP · mDNS 地址），下方依次为全局配置、时间设置与四个功能分区。
 
-| 主界面（序列器） | PWM 信号 |
-| --- | --- |
-| ![主界面（序列器）](images/01-main-sequencer.png) | ![PWM 信号](images/02-pwm.png) |
+![主界面（序列器）](images/01-main-sequencer.png)
 
-| 比较器 | 计数器 |
-| --- | --- |
-| ![比较器](images/03-comparator.png) | ![计数器](images/04-counter.png) |
+![PWM 信号](images/02-pwm.png)
 
-| 调度面板 | 中心面板 |
-| --- | --- |
-| ![调度面板](images/05-dispatch-panel.png) | ![中心面板](images/06-central-panel.png) |
+![比较器](images/03-comparator.png)
 
-| 天气面板 | 说明 |
-| --- | --- |
-| ![天气面板](images/07-weather.png) | 网络 / 手动定位切换、手动更新、接口转发、当日气象、日出日落与晨昏光、阳光交互参数 |
+![计数器](images/04-counter.png)
+
+![调度面板](images/05-dispatch-panel.png)
+
+![中心面板](images/06-central-panel.png)
+
+![天气面板](images/07-weather.png)
 
 ---
 
@@ -320,3 +318,7 @@ POST /resetconfig      重置配置（保留 WiFi）
 ## 许可证
 
 本项目采用 [MIT 许可证](LICENSE)。
+
+---
+
+*本介绍由 AI 总结，如有不妥请指明。*
