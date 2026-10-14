@@ -68,6 +68,8 @@
 
 > 工程未附带自定义分区表，直接使用内核预置的上述方案。
 
+**开发环境**：Arduino IDE 2.3.10 + ESP32 Arduino 内核 3.3.11。
+
 **依赖库**：ArduinoJson（第三方，需自行安装）。其余（WebServer、WiFi、WiFiUdp、ESPmDNS、DNSServer、Preferences、freertos、`driver/ledc`、`driver/gpio`）由 ESP32 Arduino 内核提供。工程直接使用 ESP-IDF 底层 LEDC / GPIO 驱动，建议使用较新的 ESP32 Arduino 内核（3.x）。
 
 ---
