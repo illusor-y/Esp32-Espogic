@@ -322,4 +322,4 @@ POST /resetconfig      重置配置（保留 WiFi）
 
 *本介绍由 AI 总结，如有不妥请指明。*
 
-项目源地址（GitHub）：https://github.com/illusor-y/espogic
+GitHub：https://github.com/illusor-y/espogic
