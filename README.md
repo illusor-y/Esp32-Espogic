@@ -290,13 +290,12 @@ POST /resetconfig      重置配置（保留 WiFi）
 
 定位与天气均依赖第三方公共服务，本项目只做调用与展示。部署到自己的设备前，请自行确认各服务的使用条款与免费配额。
 
-| 用途 | 服务 | 接口 |
-| --- | --- | --- |
-| 国内 IP 定位（省 / 市） | iPIP.net | `http://myip.ipip.net/json` |
-| 国外 IP 定位（经纬度 + 时区） | ipwho.is | `https://ipwho.is/` |
-| 地理编码（城市名 → 经纬度） | Open-Meteo Geocoding API | `https://geocoding-api.open-meteo.com/v1/search` |
-| 天气预报与日出日落 | Open-Meteo Weather API | `https://api.open-meteo.com/v1/forecast` |
-| NTP 对时 | 阿里云 / 腾讯 / NTP Pool | `ntp.aliyun.com`、`time1.aliyun.com`、`time.qq.com`、`cn.pool.ntp.org` |
+| 用途 | 服务 |
+| --- | --- |
+| IP 定位 | iPIP.net / ipwho.is |
+| 地理编码（城市名 → 经纬度） | Open-Meteo Geocoding API |
+| 天气预报与日出日落 | Open-Meteo Weather API |
+| NTP 对时 | 阿里云 / 腾讯 / NTP Pool |
 
 - **Open-Meteo**：免费接口按其上游授权（CC BY 4.0）使用，署名要求在此保留。天气现象采用 WMO 天气码，映射表在本地实现。
 - **iPIP.net / ipwho.is**：免费 IP 地理定位接口。本项目按其返回的位置字段做国内 / 国外分流，不涉及商业依赖。
