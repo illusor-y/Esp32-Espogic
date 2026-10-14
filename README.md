@@ -279,4 +279,4 @@ POST /resetconfig      重置配置（保留 WiFi）
 
 ## 许可证
 
-本仓库尚未附带许可证文件。若计划正式开源，建议补充 `LICENSE`（例如 MIT 或 Apache-2.0）。
+本项目采用 [MIT 许可证](LICENSE)。
